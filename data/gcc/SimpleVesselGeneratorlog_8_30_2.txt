@@ -1,0 +1,20 @@
+running SimpleVesselGenerator on 8 ranks for 30 generations and 2 dimensions
+srun -p medusa -n 8 --mpi=pmi2 /home/sshirzad/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 30 2 /work/sshirzad/repos/VascularModeling/results/geometry_8_30_2
+Calculated Root Levels: 4
+Total Vessels in Network: 30
+Vessels in Arrays: 15
+Root Network Build Time: 3.1058e-05
+Root Network Export time: 0.211645
+Sub Network build time time: 36.9661
+Write Geom Data to File 
+Geom Vector conversion time 1.98345
+Write Geom Data time: 96.2162
+Create num Connected Vessels 
+time: 2.8163
+Create Connected Vessels Array
+time: 11.4289
+Write Connected Vessels data
+time: 49.5749
+Sub Network Export time: 161.902
+Time Excluding MPI Initialization and Finalize: 210.786
+Total Time: 219.094
