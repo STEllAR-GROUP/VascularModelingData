@@ -1,64 +1,84 @@
 running SimpleVesselGenerator on 2 ranks for 3 generations and 2 dimensions
-srun -p medusa -n 2 --mpi=pmi2 /home/sshirzad/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 3 2 /work/sshirzad/repos/VascularModeling/results/geometry_2_3_2
+srun -p medusa -n 2 --mpi=pmi2 /home/sshirzad/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 3 2 /work/sshirzad/repos/VascularModelingData/results/geometry_2_3_2
 Calculated Root Levels: 2
 Total Vessels in Network: 6
 Vessels in Arrays: 3
-Root Network Build Time: 0.000198648
-Root Network Export time: 0.0314628
-Sub Network build time time: 0.130797
+Root Network Build Time: 2.81017e-05
+Root Network Vessels
+Arteries
+Root Network Vessels
+Arteries
+1,0: -0.186794,0,0	-0.100857,0,0	0.0039685	0	1
+0: 2, 8, 
+
+
+Veins
+0,0: -0.186794,0,0	-0.100857,0,0	0.0039685	0	1
+0: 2, 8, 
+
+
+Veins
+1,2: 0.100857,0,0	0.186794,0,0	0.0039685	10	11
+5: 7, 13, 
+
+0,2: 0.100857,0,0	0.186794,0,0	0.0039685	10	11
+5: 7, 13, 
+
+Root Network Export time: 0.0233525
+Sub Network build time time: 0.139145
 Write Geom Data to File 
-Geom Vector conversion time 0.0456584
-Write Geom Data time: 0.186051
+Geom Vector conversion time 0.0190177
+Write Geom Data time: 0.173539
 Create num Connected Vessels 
-time: 2.7999e-06
+time: 2.85637e-06
 Create Connected Vessels Array
-time: 2.99292e-06
+time: 3.22796e-06
 Write Connected Vessels data
-time: 0.0172288
-Sub Network Export time: 0.203919
-Sub Network Vessels
+time: 0.000593709
+Sub Network Export time: 0.174698
+Sub Network Vessels:
 arteries
-0: -0.100857,0,0	-0.0497655,0.0460027,0	0.0031498	1	2
+0,0: -0.100857,0,0	-0.0497655,0.0460027,0	0.0031498	1	2
 0: 0, 8, 3, 4, 
 
-1: -0.0497655,0.0460027,0	1.38778e-17,0.0694206,0	0.0025	2	4
+0,1: -0.0497655,0.0460027,0	1.38778e-17,0.0694206,0	0.0025	2	4
 1: 2, 4, 5, 
 
-2: -0.0497655,0.0460027,0	1.38778e-17,0.0225849,0	0.0025	2	5
+0,2: -0.0497655,0.0460027,0	1.38778e-17,0.0225849,0	0.0025	2	5
 2: 2, 3, 6, 
 
 
 Veins
-3: -1.38778e-17,0.0694206,0	0.0497655,0.0460027,0	0.0025	4	8
+0,3: -1.38778e-17,0.0694206,0	0.0497655,0.0460027,0	0.0025	4	8
 3: 7, 6, 3, 
 
-4: -1.38778e-17,0.0225849,0	0.0497655,0.0460027,0	0.0025	5	8
+0,4: -1.38778e-17,0.0225849,0	0.0497655,0.0460027,0	0.0025	5	8
 4: 7, 5, 4, 
 
-5: 0.0497655,0.0460027,0	0.100857,0,0	0.0031498	8	10
+0,5: 0.0497655,0.0460027,0	0.100857,0,0	0.0031498	8	10
 5: 1, 13, 5, 6, 
 
-Time Excluding MPI Initialization and Finalize: 0.366996
-Sub Network Vessels
+Time Excluding MPI Initialization and Finalize: 0.337576
+Sub Network Vessels:
 arteries
-0: -0.100857,0,0	-0.0497655,-0.0460027,0	0.0031498	1	3
+1,0: -0.100857,0,0	-0.0497655,-0.0460027,0	0.0031498	1	3
 0: 0, 2, 9, 10, 
 
-1: -0.0497655,-0.0460027,0	1.38778e-17,-0.0225849,0	0.0025	3	6
+1,1: -0.0497655,-0.0460027,0	1.38778e-17,-0.0225849,0	0.0025	3	6
 1: 8, 10, 11, 
 
-2: -0.0497655,-0.0460027,0	1.38778e-17,-0.0694206,0	0.0025	3	7
+1,2: -0.0497655,-0.0460027,0	1.38778e-17,-0.0694206,0	0.0025	3	7
 2: 8, 9, 12, 
 
 
 Veins
-3: -1.38778e-17,-0.0225849,0	0.0497655,-0.0460027,0	0.0025	6	9
+1,3: -1.38778e-17,-0.0225849,0	0.0497655,-0.0460027,0	0.0025	6	9
 3: 13, 12, 9, 
 
-4: -1.38778e-17,-0.0694206,0	0.0497655,-0.0460027,0	0.0025	7	9
+1,4: -1.38778e-17,-0.0694206,0	0.0497655,-0.0460027,0	0.0025	7	9
 4: 13, 11, 10, 
 
-5: 0.0497655,-0.0460027,0	0.100857,0,0	0.0031498	9	10
+1,5: 0.0497655,-0.0460027,0	0.100857,0,0	0.0031498	9	10
 5: 1, 7, 11, 12, 
 
-Total Time: 0.570529
+Total Time: 0.461242
