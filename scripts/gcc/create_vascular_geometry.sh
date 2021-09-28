@@ -1,5 +1,5 @@
 #!/bin/bash
-source /work/sshirzad/repos/VascularModeling/spack/gcc.sh
+source /work/sshirzad/repos/VascularModelingData/spack/gcc.sh
 
 ranks=$1
 gen=$2
@@ -19,7 +19,7 @@ then
 fi
 
 
-repo_dir="/work/sshirzad/repos/VascularModeling"
+repo_dir="/work/sshirzad/repos/VascularModelingData"
 exec_dir="/home/sshirzad/src/VascularModeling/Radiation_Modeling_Projects/build/Output"
 results_dir="${repo_dir}/results"
 rm -rf ${results_dir}
