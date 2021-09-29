@@ -1,8 +1,0 @@
-running SimpleVesselGenerator on 1 ranks for 3 generations and 2 dimensions
-srun -p medusa -n 1 --mpi=pmi2 /home/sshirzad/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 3 2 /work/sshirzad/repos/VascularModeling/results/geometry_3_2
-Total Vessels in Network: 14
-Vessels in Arrays: 7
--0.186794,0.186794,-0.0694206,0.0694206,-0.0039685,0.0039685
-Export time: 0.0559258
-Time Excluding MPI Initialization and Finalize: 0.057805
-Total Time: 0.223735
