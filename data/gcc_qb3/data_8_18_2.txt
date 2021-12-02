@@ -1,0 +1,65 @@
+8
+/home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output
+1-network generation
+mpirun -n 8 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 18 2 /work/sshirz1/repos/VascularModelingData/results/geometry_8_18_2
+Calculated Root Levels: 4
+Total Vessels in Network: 30
+Vessels in Arrays: 15
+Root Network Build Time: 0.000104205
+Root Network Export time: 0.0743251
+Sub Network build time: 0.831255
+Write Geom Data to File 
+Geom Vector conversion time 0.035508
+Write Geom Data time: 0.391845
+Create num Connected Vessels 
+time: 0.00114862
+Create Connected Vessels Array
+time: 0.00172574
+Write Connected Vessels data
+time: 0.0493097
+Sub Network Export time: 0.445405
+Time Excluding MPI Initialization and Finalize: 1.35497
+Total Time: 1.90304
+Done!
+2-partition
+mpirun -n 8 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/NetworkPreprocessor 8 /work/sshirz1/repos/VascularModelingData/results/geometry_8_18_2.h5 
+Import Time: 0.45665
+Building Adjacency Matrix Time: 0.203015
+Initial Edge Count: 35
+Partition Time: 0.143773
+Sorting Vessel Time: 0.653519
+
+Connected Renumbering Time before export: 0.684037
+Export Vessel Time: 0.420963
+Renumber Connected Vessel Time: 0
+2
+Entering Vessel Node Map Creator
+Apply map to BC nodes time 0.187369
+export nodes time 0.0166841
+ Node Processing  Time: 0.64821
+Total Time: 2.58549
+Done!
+3-dose_pipe_init
+mpirun -n 8 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/DosePipelineInit -c 8 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_8_18_2.h5
+numVesselsPerChunk: -1 numChunks: 8 filename: /work/sshirz1/repos/VascularModelingData/results/geometry_8_18_2.h5 Result Folder Name: ./DoseResults/
+File Needs to Be Processed
+Adaptively Specifying Number Of Vessels Per Chunk
+Folder Exists Already
+Folder Exists Already
+Done!
+ls: cannot access /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/DoseResults/*.h5: No such file or directory
+4-calc_radiation_dose_to_vessels
+Chunk 0 Time: 2.483739e+00 s
+Chunk 1 Time: 2.935277e+00 s
+Chunk 2 Time: 3.551648e+00 s
+Chunk 3 Time: 3.778844e+00 s
+Chunk 4 Time: 4.268732e+00 s
+Chunk 5 Time: 3.651683e+00 s
+Chunk 6 Time: 2.829250e+00 s
+Chunk 7 Time: 2.467975e+00 s
+Done!
+5-merge_dose_results_to_main
+mpirun -n 8 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/DoseMergeAnalysis --filename /work/sshirz1/repos/VascularModelingData/results/geometry_8_18_2.h5
+File Assignment Time:0.000629532
+File Close Time:0.000793084
+Done!

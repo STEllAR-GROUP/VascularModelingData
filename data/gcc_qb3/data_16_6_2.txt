@@ -1,0 +1,114 @@
+1-network generation
+Calculated Root Levels: 5
+Total Vessels in Network: 62
+Vessels in Arrays: 31
+Root Network Build Time: 0.000145558
+Root Network Export time: 0.27557
+Sub Network build time: 0.0189984
+Write Geom Data to File 
+Geom Vector conversion time 5.27271e-05
+Write Geom Data time: 0.258688
+Create num Connected Vessels 
+time: 3.95789e-06
+Create Connected Vessels Array
+time: 4.20096e-06
+Write Connected Vessels data
+time: 0.124421
+Sub Network Export time: 0.385944
+Time Excluding MPI Initialization and Finalize: 0.681096
+Total Time: 0.888904
+Done!
+2-partition
+Import Time: 0.211784
+Building Adjacency Matrix Time: 0.00389004
+Initial Edge Count: 58
+Partition Time: 0.033911
+Sorting Vessel Time: 0.000715017
+
+Connected Renumbering Time before export: 0.00354218
+Export Vessel Time: 0.980434
+Renumber Connected Vessel Time: 9.53674e-07
+7
+Entering Vessel Node Map Creator
+Apply map to BC nodes time 0.00127101
+export nodes time 0.091434
+ Node Processing  Time: 0.225396
+Total Time: 1.56913
+Done!
+2-dose_pipe_init
+numVesselsPerChunk: -1 numChunks: 16 filename: /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5 Result Folder Name: ./DoseResults/
+File Needs to Be Processed
+Adaptively Specifying Number Of Vessels Per Chunk
+Folder Exists Already
+Folder Exists Already
+Done!
+4-calc_radiation_dose_to_vessels
+16,6,2,0
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 0
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 0 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,1
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 1
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 1 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,2
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 2
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 2 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,3
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 3
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 3 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,4
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 4
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 4 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,5
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 5
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 5 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,6
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 6
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 6 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,7
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 7
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 7 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,8
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 8
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 8 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,9
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 9
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 9 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,10
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 10
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 10 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,11
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 11
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 11 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,12
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 12
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 12 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,13
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 13
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 13 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,14
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 14
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 14 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+16,6,2,15
+running VesselDoseCalcs on 16 ranks for 6 generations, 2 dimensions, chunk index 15
+/home/sshirz1/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output/VesselDoseCalcs -c 15 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_16_6_2.h5
+Done!
+Done!
+5-merge_dose_results_to_main
+File Assignment Time:0.000364643
+File Close Time:0.412557
+Done!

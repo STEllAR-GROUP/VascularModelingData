@@ -1,0 +1,120 @@
+64
+/home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output
+1-network generation
+mpirun -n 64 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 24 2 /work/sshirz1/repos/VascularModelingData/results/geometry_64_24_2
+Calculated Root Levels: 7
+Total Vessels in Network: 254
+Vessels in Arrays: 127
+Root Network Build Time: 0.000126554
+Root Network Export time: 0.233597
+Sub Network build time: 5.71946
+Write Geom Data to File 
+Geom Vector conversion time 0.37175
+Write Geom Data time: 5.80477
+Create num Connected Vessels 
+time: 0.0182337
+Create Connected Vessels Array
+time: 0.0813399
+Write Connected Vessels data
+time: 0.954781
+Sub Network Export time: 6.86951
+Time Excluding MPI Initialization and Finalize: 12.8845
+Total Time: 15.7493
+Done!
+2-partition
+mpirun -n 64 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/NetworkPreprocessor 64 /work/sshirz1/repos/VascularModelingData/results/geometry_64_24_2.h5 
+Import Time: 2.63712
+Building Adjacency Matrix Time: 0.949559
+Initial Edge Count: 296
+Partition Time: 1.34422
+Sorting Vessel Time: 9.13841
+
+Connected Renumbering Time before export: 11.7593
+Export Vessel Time: 16.5244
+Renumber Connected Vessel Time: 1.90735e-06
+2
+Entering Vessel Node Map Creator
+Apply map to BC nodes time 0.711376
+export nodes time 1.50969
+ Node Processing  Time: 7.97539
+Total Time: 41.555
+Done!
+3-dose_pipe_init
+mpirun -n 64 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/DosePipelineInit -c 64 --filename /work/sshirz1/repos/VascularModelingData/results/geometry_64_24_2.h5
+numVesselsPerChunk: -1 numChunks: 64 filename: /work/sshirz1/repos/VascularModelingData/results/geometry_64_24_2.h5 Result Folder Name: ./DoseResults/
+File Needs to Be Processed
+Adaptively Specifying Number Of Vessels Per Chunk
+Folder Exists Already
+Folder Exists Already
+Done!
+4-calc_radiation_dose_to_vessels
+Chunk 0 Time: 6.485910e+00 s
+Chunk 1 Time: 6.341484e+00 s
+Chunk 2 Time: 6.544880e+00 s
+Chunk 3 Time: 7.255336e+00 s
+Chunk 4 Time: 7.778569e+00 s
+Chunk 5 Time: 8.570990e+00 s
+Chunk 6 Time: 8.417764e+00 s
+Chunk 7 Time: 8.435553e+00 s
+Chunk 8 Time: 8.694101e+00 s
+Chunk 9 Time: 8.998324e+00 s
+Chunk 10 Time: 8.918274e+00 s
+Chunk 11 Time: 9.271336e+00 s
+Chunk 12 Time: 8.549267e+00 s
+Chunk 13 Time: 9.250307e+00 s
+Chunk 14 Time: 9.090891e+00 s
+Chunk 15 Time: 9.305401e+00 s
+Chunk 16 Time: 9.282216e+00 s
+Chunk 17 Time: 9.426865e+00 s
+Chunk 18 Time: 9.270689e+00 s
+Chunk 19 Time: 9.273968e+00 s
+Chunk 20 Time: 9.405512e+00 s
+Chunk 21 Time: 9.453841e+00 s
+Chunk 22 Time: 9.188156e+00 s
+Chunk 23 Time: 8.821777e+00 s
+Chunk 24 Time: 9.141357e+00 s
+Chunk 25 Time: 8.962687e+00 s
+Chunk 26 Time: 8.186412e+00 s
+Chunk 27 Time: 8.936551e+00 s
+Chunk 28 Time: 8.833835e+00 s
+Chunk 29 Time: 8.958698e+00 s
+Chunk 30 Time: 8.788414e+00 s
+Chunk 31 Time: 8.936057e+00 s
+Chunk 32 Time: 2.084134e+01 s
+Chunk 33 Time: 2.058402e+01 s
+Chunk 34 Time: 2.035651e+01 s
+Chunk 35 Time: 1.946226e+01 s
+Chunk 36 Time: 1.918658e+01 s
+Chunk 37 Time: 1.819688e+01 s
+Chunk 38 Time: 1.830667e+01 s
+Chunk 39 Time: 1.748298e+01 s
+Chunk 40 Time: 1.739370e+01 s
+Chunk 41 Time: 1.647094e+01 s
+Chunk 42 Time: 1.625420e+01 s
+Chunk 43 Time: 1.568391e+01 s
+Chunk 44 Time: 1.478524e+01 s
+Chunk 45 Time: 1.432588e+01 s
+Chunk 46 Time: 1.429498e+01 s
+Chunk 47 Time: 1.449333e+01 s
+Chunk 48 Time: 1.295992e+01 s
+Chunk 49 Time: 1.257229e+01 s
+Chunk 50 Time: 1.201020e+01 s
+Chunk 51 Time: 1.171298e+01 s
+Chunk 52 Time: 1.120067e+01 s
+Chunk 53 Time: 1.111585e+01 s
+Chunk 54 Time: 1.060918e+01 s
+Chunk 55 Time: 9.941846e+00 s
+Chunk 56 Time: 9.671324e+00 s
+Chunk 57 Time: 8.638900e+00 s
+Chunk 58 Time: 8.639129e+00 s
+Chunk 59 Time: 7.624778e+00 s
+Chunk 60 Time: 7.281204e+00 s
+Chunk 61 Time: 7.624799e+00 s
+Chunk 62 Time: 6.861560e+00 s
+Chunk 63 Time: 6.248877e+00 s
+Done!
+5-merge_dose_results_to_main
+mpirun -n 64 /home/sshirz1/src/VascularModeling/Radiation_Modeling_Projects/build/Output/DoseMergeAnalysis --filename /work/sshirz1/repos/VascularModelingData/results/geometry_64_24_2.h5
+File Assignment Time:0.00323221
+File Close Time:13.0055
+Done!
