@@ -1,4 +1,6 @@
 running SimpleVesselGenerator on 2 ranks for 3 generations and 2 dimensions
+produced by uncommentig PrintSubVessels(rootNumLevels, arteries2, veins2, numLevels); in Radiation Modeling Projects/SimpleVesselGeneratorExecutable/main.cpp
+
 srun -p medusa -n 2 --mpi=pmi2 /home/sshirzad/src/VascularModeling/Radiation_Modeling_Projects/build/Output/SimpleVesselGenerator 3 2 /work/sshirzad/repos/VascularModelingData/results/geometry_2_3_2
 Calculated Root Levels: 2
 Total Vessels in Network: 6
