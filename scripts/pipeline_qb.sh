@@ -57,3 +57,11 @@ echo "mpirun -n ${ranks} ${NP}/DoseMergeAnalysis --filename ${results_dir}/geome
 
 mpirun -n ${ranks} "${NP}/DoseMergeAnalysis" --filename "${results_dir}/geometry_${ranks}_${gen}_${dim}.h5"
 echo "Done!"
+
+
+echo "6-blood_flow_modeling"
+echo "mpirun -n ${ranks} ${NP}/BloodFlowModeling -1 ${results_dir}/geometry_${ranks}_${gen}_${dim}.h5"
+
+mpirun -n ${ranks} "${NP}/BloodFlowModeling" -1 "${results_dir}/geometry_${ranks}_${gen}_${dim}.h5"
+echo "Done!"
+

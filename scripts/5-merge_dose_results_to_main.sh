@@ -1,5 +1,10 @@
 #!/bin/bash
-source /work/sshirzad/repos/VascularModelingData/spack/gcc.sh
+repo_dir="/work/sshirzad/repos/VascularModelingData"
+exec_dir="/home/sshirzad/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output"
+results_dir="${repo_dir}/results"
+
+source "${repo_dir}"/gcc_rostam.sh
+
 ranks=$1
 gen=$2
 dim=$3
@@ -17,12 +22,6 @@ then
         dim=2
 fi
 
-
-repo_dir="/work/sshirzad/repos/VascularModelingData"
-exec_dir="/home/sshirzad/src/VascularModeling/Radiation\ Modeling\ Projects/build/Output"
-results_dir="${repo_dir}/results"
-#rm -rf ${results_dir}
-mkdir -p ${results_dir}
 echo "running DoseMergeAnalysis on ${ranks} ranks for ${gen} generations and ${dim} dimensions"
 
 echo "srun -p medusa -n ${ranks} --mpi=pmi2 ${exec_dir}/DoseMergeAnalysis ${results_dir}/geometry_${ranks}_${gen}_${dim}.h5"| tee ${results_dir}/DoseMergeAnalysislog_${ranks}_${gen}_${dim}.txt
